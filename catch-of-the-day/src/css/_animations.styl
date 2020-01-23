@@ -1,0 +1,20 @@
+/*
+  Possible Animations:
+  enter
+  exit
+  appear Must set transitionAppear={true} on animation component
+*/
+
+.order-enter
+  background red
+  transform: translateX(-120%)
+  transition 3s
+  &.order-enter-active
+    background yellow
+    transform: translateX(0)
+
+.order-exit
+  transition 3s
+  background thistle
+  .order-exit-active
+    background palegolenrod
